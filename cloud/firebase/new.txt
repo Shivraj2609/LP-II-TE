@@ -1,1 +1,54 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Salesforce :
+ruturajpatil7up@gmail.com
+Ruturaj@007
+
+
+Firebase :
+shivraj2609@gmail.com
+Shivraj@2609missss
+--------------------------------------------------------
+const firebaseConfig = {
+  apiKey: "AIzaSyARXPW48azKVzuUph0Q1YdlNL33DSJajtU",
+  authDomain: "fir-app-b4925.firebaseapp.com",
+  projectId: "fir-app-b4925",
+  storageBucket: "fir-app-b4925.appspot.com",
+  messagingSenderId: "1098036766064",
+  appId: "1:1098036766064:web:2940d5f60c69caed871bb5",
+  measurementId: "G-YKCLQXG4R9"
+};
+---------------------------------------------------------
+
+
+shivsalunkhe46@gmail.com
+
