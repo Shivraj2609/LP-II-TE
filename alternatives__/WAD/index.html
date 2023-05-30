@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Updating DOM using jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>Updating DOM using jQuery</h1>
+  <ul id="myList">
+    <li>List Item 1</li>
+    <li>List Item 2</li>
+    <li>List Item 3</li>
+  </ul>
+  <button id="addButton">Add Item</button>
+
+  <script>
+        $(document).ready(function() {
+        $('#addButton').click(function() {
+            var newItem = $('<li>New List Item</li>');
+            $('#myList').append(newItem);
+        });
+        });
+  </script>
+</body>
+</html>

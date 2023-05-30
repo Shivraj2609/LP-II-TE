@@ -1,0 +1,36 @@
+Find a procedure to transfer the files from one virtual machine to another virtual machine...
+
+step 1
+    Configure both machines with NatNetwork...
+
+step 2
+    Start and Login in both system...
+        username: vagrant
+        password: vagrant
+
+step 3 
+    Check ip's of both systems...
+        ifconfig
+
+step 4
+    Create file to transfer...
+    VM1: ls
+        touch file.txt
+        cat file.txt
+        nano file.txt
+            Add contents...
+            clr+s and clr+x
+        ls
+        cat file.txt
+
+    VM2: ls
+
+step 5
+    Transfer file from one machine to other...
+    VM1: ls
+        cat file.txt
+        scp file.txt vagrant@10.0.2.8(ip of dest machine):/home/vagrant
+            -select yes
+            -enter password
+    VM2: ls
+        cat file.txt
