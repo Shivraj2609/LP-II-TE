@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Updating DOM using jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .container {
+      margin: 50px auto;
+      text-align: center;
+    }
+    
+    .btn {
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .output {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Updating DOM using jQuery</h2>
+    <button class="btn">Update Text</button>
+    <div class="output"></div>
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <button class="btn" id="nameBtn">Update Name</button>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      $('.btn').click(function() {
+        $('.output').text('Text updated using jQuery!');
+      });
+
+      $('#nameBtn').click(function() {
+        const name = $('#nameInput').val();
+        if (name) {
+          $('.output').text('Hello, ' + name + '!');
+        } else {
+          $('.output').text('Please enter a name.');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
